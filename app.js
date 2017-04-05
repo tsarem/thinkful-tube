@@ -57,13 +57,14 @@ function lightBox(id){
     $('body').append('<div class="wrapper"></div>');
     $('.wrapper').fadeIn(function(){
       $('body').append('<div class="lightbox"></div>');
-      $('.lightbox').html('<iframe width=100% height=100% src="https://www.youtube.com/embed/'+id+'" frameborder="0" allowfullscreen></iframe> <span onclick="lightboxClose()"class="exit">[x]</span>');
+      $('.lightbox').html('<iframe width=100% height=100% src="https://www.youtube.com/embed/'+id+'" frameborder="0" allowfullscreen class="video"></iframe> <span onclick="lightboxClose()"class="exit">[x]</span>');
       $('.lightbox').fadeIn();
     })
 }
 function lightboxClose(){
   $('.lightbox').fadeOut(function(){
     $('.wrapper').fadeOut();
+    $('.video').attr("src","");
   });
 }
 
