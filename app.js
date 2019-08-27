@@ -19,7 +19,7 @@ function getDataFromApi(searchTerm, optionalData, callback) {
     data: {
       r: 'json',
       part:'snippet',
-      key:'AIzaSyBazYEGOymeMcFk4UwO-0Hojmn4WZIztXE',
+      key:'AIzaSyAxVKdwoUG3jIEqZqDlUFOOZ_V9dzyDXbo',
       q:searchTerm,
     },
     dataType: 'json',
